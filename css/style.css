@@ -280,4 +280,8 @@ body {
     right: 20px;
     bottom: 70px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.footer img:hover {
+    transform: scale(1.1);
 }
