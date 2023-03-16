@@ -1,0 +1,283 @@
+/*Formatação geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+:target {
+    scroll-margin-top: 70px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/*menu de navegação*/
+.header {
+    width: 100vw;
+    height: 70px;
+    background-color: #66533b;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu-navigation {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-navigation .logo-nav {
+    width: 80px;
+    transition: all 0.3s;
+}
+
+.menu-navigation .logo-nav:hover {
+    transform: scale(1.1);
+}
+
+.menu-navigation .menu-items {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu-items a {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.menu-items a:hover {
+    color: #c4a47c;
+}
+
+
+/*seção de banner*/
+.section-banner {
+    height: 100vh;
+}
+
+.container-image-banner {
+    height: 100%;
+    background-image: url(/images/parallax-imagem1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-image-banner h1 {
+    font-family: 'oswald', sans-serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: white;
+}
+
+
+/*seção informações*/
+.section-information {
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-information .text-container, 
+.section-information .image-container {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-information 
+.text-container h2 {
+    font-family: 'oswald', sans-serif;
+    letter-spacing: 5px;
+    color: #c4a47c;
+}
+
+.section-information 
+.text-container p {
+    width: 50%;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: #666;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.section-information 
+.image-container h2 {
+    font-family: 'fraunces';
+    color: white;
+    padding: 5px 10px;
+    background-color: #c4a47c;
+    border-radius: 3px;
+}
+
+.section-information 
+.image-container-1 {
+    background-image: url(/images/parallax-imagem2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-information 
+.image-container-2 {
+    background-image: url(/images/parallax-imagem3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*seção contatos*/
+.section-contact {
+    height: calc(100vh - 70px);
+    background-image: url('/images/parallax-imagem4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container-image-contact {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-image-contact h2 {
+    font-family: 'oswald', sans-serif;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.container-image-contact ul {
+    list-style: none;
+} 
+
+.container-image-contact li {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+    color: white;
+}
+
+
+/*seção de horários de funcionamento*/
+.section-opening-hours {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    background-image: url('/images/cafeteria.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-opening-hours h2 {
+    font-family: 'oswald', sans-serif;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.operation-items-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.operation-items-container
+.day-items-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.operation-items-container
+.day-items-row span {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    width: 120px;
+    text-align: justify;
+}
+
+.operation-items-container
+.day-items-row h3:nth-child(3){
+    width: 110px;
+}
+
+.operation-items-container
+.day-items-row div {
+    width: 500px;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+/*rodapé da página*/
+.footer {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    position: relative;
+}
+
+.footer p {
+    font-family: 'Latos', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.footer p span {
+    color: #c4a47c;
+}
+
+.footer img {
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+    cursor: pointer;
+}
