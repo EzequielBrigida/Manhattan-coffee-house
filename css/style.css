@@ -237,11 +237,13 @@ body {
     color: white;
     width: 120px;
     text-align: justify;
+    font-weight: bold;
 }
 
 .operation-items-container
-.day-items-row h3:nth-child(3){
-    width: 110px;
+.day-items-row 
+.span-closed {
+    color: #c4a47c;
 }
 
 .operation-items-container
